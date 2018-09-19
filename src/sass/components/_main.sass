@@ -1,0 +1,105 @@
+.main
+	max-width: 1170px
+	margin: 0 auto
+	padding-top: 20px
+	display: flex
+	flex-wrap: wrap
+	&__heading
+		margin-bottom: 20px		
+		color: #ffffff
+		+fb
+		font-size: 25px
+		text-transform: uppercase
+		letter-spacing: -1.3px
+		width: 100%
+		+r(1200)
+			padding-left: 15px
+	&__items
+		display: flex
+		flex-wrap: wrap
+		max-width: 860px
+		+r(900)
+			width: auto
+			justify-content: space-around
+
+	&__more
+		margin: 30px auto
+		display: block
+		color: #ffffff
+		+fb
+		font-size: 15px
+		text-transform: uppercase
+		letter-spacing: -0.28px
+		background-color: transparent
+		margin-bottom: 71px
+		+r(900)
+			width: 100%
+		&:hover
+			background-image: linear-gradient(180deg, #ffd100 0%, #ff7300 100%)
+			background-clip: text
+			-webkit-background-clip: text
+			text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5)
+			color: rgba(243,195,4, .8)
+	&__wrapper
+		margin-right: 25px
+		+r(1200)
+			margin-right: auto
+			margin-left: auto
+
+
+.game-item
+	margin-right: 10px
+	margin-bottom: 10px
+	width: 205px
+	height: 205px
+	position: relative
+	display: flex
+	justify-content: center
+	&:hover &__hover
+		display: flex
+	&__more
+		position: absolute
+		top: 45%
+		left: 25%
+		text-shadow: 2px 0px 15px #e21d5c
+		color: #ffffff
+		+fb
+		font-size: 15px
+		text-transform: uppercase
+		letter-spacing: -0.28px
+		text-decoration: none
+	&__hover
+		display: none
+		flex-flow: column
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		box-shadow: 0 0 10px 3px rgba(255, 164, 0, 0.4)
+		border-radius: 2px
+		border: 4px solid #e21d5c
+		background-color: rgba(0, 0, 0, 0.6)
+		background-image: linear-gradient(to top, rgba(226, 29, 92, 0.3) 0%, rgba(128, 0, 255, 0.3) 100%)
+		h3
+			text-shadow: 0 2px 3px #000000
+			color: #ffffff
+			+fb
+			font-size: 26px
+			line-height: 1
+			margin: 43px 20px 0
+			text-align: center
+			flex: 1 1 auto
+	&__btns
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 20px
+
+	&__btn
+		margin-right: 6px
+		&:last-child
+			margin-right: 0
+
+
+

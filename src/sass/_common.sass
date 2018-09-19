@@ -1,0 +1,77 @@
+.btn
+	color: #fff
+	background-color: transparent
+	+helv
+	font-weight: 700
+	&_hover:hover, .btn.is-active
+		box-shadow: 0 0 10px 2px rgb(69,1,138)
+		border-radius: 3px
+		border: 2px dashed #ec094b
+	&_header
+		padding: 11px 28px
+		font-size: 13px
+		line-height: 1.23
+		letter-spacing: 0.2px
+		border: 2px solid rgba(69,1,138, 0.7)
+		border-radius: 3px
+	&_nav-secondary
+		padding: 10px 25px 12px
+		border: 2px solid transparent
+		&:hover, &.is-active
+			color: rgba(243,195,4, .8)
+			background-image: linear-gradient(180deg, #ffd100 0%, #ff7300 100%)
+			background-clip: text
+			-webkit-background-clip: text
+	&_game-item
+		width: 80px
+		height: 46px
+		box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2), inset 0 0 7px 1px #ae5cff
+		border-radius: 3px
+		background-color: #8000ff
+		background: linear-gradient(to bottom, rgba(193,108,243,1) 0%,rgba(131,0,255,1) 49%,rgba(86,0,255,1) 52%,rgba(74,8,255,1) 92%,rgba(122,48,255,1) 100%);
+		text-shadow: 0 2px 0 #b61045
+		color: #ffffff
+		+fb
+		font-size: 15px
+		text-transform: uppercase
+		letter-spacing: -0.47px
+		&:hover
+			background-color: #e21d5c
+			box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2), inset 0 0 7px 1px #ff8bb0
+			background: linear-gradient(to bottom, rgba(249,98,159,1) 0%,rgba(226,29,93,1) 49%,rgba(211,14,46,1) 50%,rgba(215,25,57,1) 89%,rgba(234,79,114,1) 100%);
+	&_winners
+		color: #ffffff
+		+helv
+		font-size: 13px
+		line-height: 1.23
+		letter-spacing: -0.24px
+		background-color: transparent
+		width: 80px
+		text-align: left
+		position: relative
+		&:hover, &.is-active
+			text-shadow: 1px 0px 2px #fff
+			&:after
+				content: ''
+				position: absolute
+				bottom: -10px
+				left: 0
+				width: 83px
+				height: 3px
+				box-shadow: 0 0 5px #e21d5c
+				border-radius: 1px
+				background-color: #e21d5c
+				background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%)
+	&_registr
+		color: #ffffff
+		+fd
+		font-size: 19px
+		letter-spacing: 0px
+		padding: 7px 55px 13px 52px
+		border-radius: 3px
+		border: 3px solid #e21d5c
+		background-color: transparent
+		box-sizing: border-box
+	&_menu
+		
+			

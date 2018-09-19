@@ -1,0 +1,30 @@
+---
+title: Kosmolot
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+
+	{% include "partials/_sidebar.html" %}
+	{% include "partials/_header.html" %}
+	{% include "partials/_navigation.html" %}
+	{% include "partials/_slider.html" %}
+	{% include "partials/_nav-secondary.html" %}
+	{% include "partials/_main.html" %}
+	{% include "partials/_footer.html" %}
+	{% include "partials/_popup.html" %}
+<!-- 
+	{# mixin example #}
+	{{mixins.icon('facebook')}} -->
+
+<!-- 
+	{# data usage example #}
+		{% import "data/data.html" as tests %}
+		
+		{% for test in tests.list %}
+		<li>{{test.title}}</li>
+		{% endfor %}
+	{# end of example #} -->
+
+{% endblock %}

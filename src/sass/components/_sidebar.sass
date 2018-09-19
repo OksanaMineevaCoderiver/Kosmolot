@@ -1,0 +1,81 @@
+.sidebar
+	position: absolute
+	background-color: rgba(0,0,0, 0.8)
+	width: 100vw
+	padding: 50px 0 40px
+	z-index: 200
+	display: none
+	&.is-active
+		display: block
+	&__list
+		a
+			display: block
+			padding: 20px 20px
+			text-decoration: none
+			+fb
+			font-size: 30px
+			color: #fff
+			position: relative
+			opacity: .7
+			transition: opacity 0.5s
+			&:after
+				content: ''
+				width: 100vw
+				height: 3px
+				background-color: rgb(230,34,57)
+				position: absolute
+				left: 0
+				margin-left: -20px
+				top: 0
+				transform: scaleX(0)
+				transition: transform .5s
+			&:hover:after
+				transform: scaleX(1)
+				transform-origin: left center
+			&:before
+				content: ''
+				width: 100vw
+				height: 3px
+				background-color: #fff
+				position: absolute
+				left: 0
+				margin-left: -20px
+				bottom: 0
+				transform: scaleX(0)
+				transition: transform .5s
+			&:hover:before
+				transform: scaleX(1)
+				transform-origin: right center
+			&:hover
+				background: linear-gradient(to bottom, rgb(230,54,37) 0%,rgb(41,9,82) 20%,rgb(41,9,82) 90%,rgb(41,9,82) 80%,rgb(255,255,255) 100%)
+				opacity: 1
+
+	&__close
+		position: absolute
+		top: 20px
+		right: 40px
+		cursor: pointer
+		display: block
+		width: 28px
+		height: 30px
+		&:before
+			content: ""
+			width: 30px
+			height: 3px
+			background-color: #fff
+			position: absolute
+			top: 13px
+			left: -2px
+			transform: rotate(45deg)
+		&:after
+			content: ""
+			width: 30px
+			height: 3px
+			top: 13px
+			left: -2px
+			background-color: #fff
+			position: absolute
+			transform: rotate(135deg)
+
+
+

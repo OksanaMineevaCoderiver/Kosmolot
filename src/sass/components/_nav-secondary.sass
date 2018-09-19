@@ -1,0 +1,33 @@
+.nav-secondary
+	max-width: 1170px
+	margin: 0 auto
+	+r(1120)
+		padding-left: 15px
+	&__btn
+		position: relative
+		padding-right: 21px
+		padding-left: 21px
+		letter-spacing: 1.2px
+		&:nth-child(n+3)
+			+r(1120)
+				display: none
+		&:last-child
+			padding-right: 40px
+			+r(1120)
+				display: inline-block
+
+			&:after
+				content: ""
+				position: absolute
+				width: 9px
+				height: 9px
+				top: 50%
+				right: 15px
+				margin-top: -7px
+				border-bottom: 2px solid #ffffff
+				border-right: 2px solid #ffffff
+				transform: rotate(45deg)
+			&:hover:after
+				border-color: rgba(243,195,4, .8)
+
+
